@@ -6,14 +6,11 @@ import com.example.tp1.model.AddressBook;
 import java.util.List;
 
 public class AddressBookService {
-    // In a real-world scenario, this would be injected or retrieved from a database
     private static AddressBook addressBook = new AddressBook("Main Address Book");
 
-    // Singleton pattern for the service
     private static final AddressBookService INSTANCE = new AddressBookService();
 
     private AddressBookService() {
-        // Private constructor to enforce singleton pattern
     }
 
     public static AddressBookService getInstance() {
